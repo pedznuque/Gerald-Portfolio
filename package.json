@@ -17,7 +17,7 @@
   
   },
 
-  "homepage": "https://pedznuque.github.io/Gerald-Portfolio/home",
+  "homepage": "https://pedznuque.github.io/Gerald-Portfolio/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
