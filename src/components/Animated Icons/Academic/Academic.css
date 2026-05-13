@@ -1,0 +1,240 @@
+.ape-logo {
+  --bg-dark: #312e81;
+  --bg-main: #6366f1;
+  --accent-1: #facc15;
+  --accent-2: #38bdf8;
+  --accent-3: #22c55e;
+  --panel: #ffffff;
+  --panel-soft: #e0e7ff;
+  --text: #1e1b4b;
+
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ape-card {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-main));
+  position: relative;
+  overflow: hidden;
+  animation: apeFloat 3s ease-in-out infinite;
+}
+
+.ape-card::before {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: rgba(250, 204, 21, 0.22);
+  top: -50px;
+  right: -45px;
+  animation: apeGlow 4s ease-in-out infinite;
+}
+
+.ape-cap {
+  width: 43px;
+  height: 34px;
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  animation: apeCapBounce 2.5s ease-in-out infinite;
+}
+
+.ape-cap-top {
+  width: 42px;
+  height: 18px;
+  background: var(--accent-1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(-18deg) rotate(-8deg);
+  border-radius: 4px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.ape-cap-band {
+  width: 25px;
+  height: 10px;
+  background: #fef3c7;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  top: 17px;
+  left: 8px;
+}
+
+.ape-tassel {
+  width: 3px;
+  height: 22px;
+  background: var(--accent-2);
+  border-radius: 10px;
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  transform-origin: top;
+  animation: apeTasselSwing 1.8s ease-in-out infinite;
+}
+
+.ape-tassel::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--accent-2);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4px;
+  left: -2.5px;
+}
+
+.ape-project-board {
+  width: 48px;
+  height: 48px;
+  background: var(--panel);
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.26);
+  animation: apeBoardPulse 2.6s ease-in-out infinite;
+}
+
+.ape-board-header {
+  height: 13px;
+  background: var(--panel-soft);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 7px;
+}
+
+.ape-board-header span {
+  width: 5px;
+  height: 5px;
+  background: var(--bg-main);
+  border-radius: 50%;
+}
+
+.ape-task {
+  height: 5px;
+  border-radius: 10px;
+  position: absolute;
+  left: 9px;
+  animation: apeTaskLoad 2s ease-in-out infinite;
+  transform-origin: left;
+}
+
+.ape-task-1 {
+  width: 30px;
+  top: 22px;
+  background: var(--text);
+}
+
+.ape-task-2 {
+  width: 23px;
+  top: 31px;
+  background: var(--accent-2);
+  animation-delay: 0.25s;
+}
+
+.ape-task-3 {
+  width: 17px;
+  top: 40px;
+  background: var(--accent-3);
+  animation-delay: 0.45s;
+}
+
+.ape-star {
+  width: 18px;
+  height: 18px;
+  background: var(--accent-1);
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: apeStarPop 2.2s ease-in-out infinite;
+}
+
+
+
+@keyframes apeGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+@keyframes apeCapBounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-3px) rotate(-3deg);
+  }
+}
+
+@keyframes apeTasselSwing {
+  0%, 100% {
+    transform: rotate(12deg);
+  }
+
+  50% {
+    transform: rotate(-12deg);
+  }
+}
+
+@keyframes apeBoardPulse {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.04) translateY(-2px);
+  }
+}
+
+@keyframes apeTaskLoad {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scaleX(0.55);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes apeStarPop {
+  0%, 100% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.15) rotate(12deg);
+    opacity: 1;
+  }
+}

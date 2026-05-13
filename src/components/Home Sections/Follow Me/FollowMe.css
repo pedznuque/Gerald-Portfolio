@@ -1,0 +1,34 @@
+.follow_me {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding-inline: 20px;
+font-weight: bold;
+
+}
+
+.soc_med_container {
+
+
+list-style: none;
+display: flex;
+flex-direction: row;
+gap: 15px;
+justify-content: center;
+align-items: center;
+}
+
+
+.soc_med_container li {
+
+background-color: var(--button-color);
+padding: 10px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--white-font-color);
+
+}

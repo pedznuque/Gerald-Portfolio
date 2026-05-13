@@ -1,0 +1,184 @@
+.tas-logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.tas-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #0f172a, #1e40af);
+  position: relative;
+  overflow: hidden;
+
+  animation: tasFloat 3s ease-in-out infinite;
+}
+
+.tas-circle::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, rgba(255,255,255,0.22), transparent 60%);
+  top: -45px;
+  left: -45px;
+  animation: tasGlow 4s linear infinite;
+}
+
+.tas-gear {
+  width: 34px;
+  height: 34px;
+  border: 5px solid #38bdf8;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  animation: tasSpin 5s linear infinite;
+}
+
+.tas-gear::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #38bdf8;
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+}
+
+.tas-gear span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #38bdf8;
+  border-radius: 2px;
+}
+
+.tas-gear span:nth-child(1) {
+  top: -10px;
+  left: 8px;
+}
+
+.tas-gear span:nth-child(2) {
+  right: -10px;
+  top: 8px;
+}
+
+.tas-gear span:nth-child(3) {
+  bottom: -10px;
+  left: 8px;
+}
+
+.tas-gear span:nth-child(4) {
+  left: -10px;
+  top: 8px;
+}
+
+.tas-document {
+  width: 34px;
+  height: 42px;
+  background: #f8fafc;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+  animation: tasPulse 2.4s ease-in-out infinite;
+}
+
+.tas-document::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top: 10px solid #bfdbfe;
+  border-left: 10px solid transparent;
+}
+
+.tas-line {
+  height: 3px;
+  background: #1e40af;
+  border-radius: 10px;
+  position: absolute;
+  left: 7px;
+}
+
+.tas-line-1 {
+  width: 18px;
+  top: 15px;
+}
+
+.tas-line-2 {
+  width: 22px;
+  top: 23px;
+}
+
+.tas-line-3 {
+  width: 15px;
+  top: 31px;
+}
+
+.tas-check {
+  width: 25px;
+  height: 13px;
+  border-left: 5px solid #22c55e;
+  border-bottom: 5px solid #22c55e;
+  position: absolute;
+  bottom: 25px;
+  left: 32px;
+  transform: rotate(-45deg);
+  animation: tasCheck 2s ease-in-out infinite;
+}
+
+
+
+@keyframes tasSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tasPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes tasCheck {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) rotate(-45deg);
+  }
+
+  40%, 100% {
+    opacity: 1;
+    transform: scale(1) rotate(-45deg);
+  }
+}
+
+@keyframes tasGlow {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(35px, 35px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

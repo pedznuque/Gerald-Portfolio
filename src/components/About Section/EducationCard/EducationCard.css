@@ -1,0 +1,80 @@
+.education_card {
+
+
+border: var(--placeholder-border-color);
+width: 100%;
+min-height: 100px;
+margin-top: 15px;
+border-radius: 5px;
+background-color: var(--placeholder-background-color);
+display: flex;
+flex-direction: row;
+gap: 15px;
+
+padding: 10px;
+padding-block: 15px;
+
+}
+
+.education_card .image_container {
+
+width: 140px;
+
+}
+
+
+.education_card .image_container .image_holder {
+
+background-color: gray;
+height: 150px;
+border-radius: 5px;
+border: var(--placeholder-border-color);
+
+}
+
+.education_card .image_container .image_holder img {
+
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 5px;
+}
+
+.education_card .details_container {
+
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 5px;
+
+}
+
+
+.education_card .details_container .level {
+
+
+
+font-weight: bold;
+color: var(--green-font-color);
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 5px;
+margin-top: 5px;
+}
+
+.education_card .details_container .school_details {
+
+font-size: 14px;
+
+
+}
+
+.course h4 {
+
+
+}

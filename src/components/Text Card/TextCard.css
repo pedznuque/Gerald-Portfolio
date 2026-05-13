@@ -1,0 +1,26 @@
+.text_card {
+
+
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+border-radius: 5px;
+background-color: grey;
+
+
+}
+
+.text_card .title {
+
+
+font-weight: bold;
+font-size: 20px;
+
+}
+
+.text_card .body {
+
+
+
+}

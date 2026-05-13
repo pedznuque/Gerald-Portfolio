@@ -1,0 +1,255 @@
+.aida-logo {
+  --bg-dark: #111827;
+  --bg-main: #9333ea;
+  --accent-1: #22d3ee;
+  --accent-2: #f472b6;
+  --accent-3: #a3e635;
+  --panel: #ffffff;
+  --panel-soft: #f3e8ff;
+  --text: #312e81;
+
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aida-card {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-main));
+  position: relative;
+  overflow: hidden;
+  animation: aidaFloat 3s ease-in-out infinite;
+}
+
+.aida-card::before {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: rgba(34, 211, 238, 0.22);
+  top: -50px;
+  right: -45px;
+  animation: aidaGlow 4s ease-in-out infinite;
+}
+
+.aida-chip {
+  width: 38px;
+  height: 38px;
+  background: #0f172a;
+  border: 3px solid var(--accent-1);
+  border-radius: 10px;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.55);
+  animation: aidaChipPulse 2.4s ease-in-out infinite;
+}
+
+.aida-chip-core {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  animation: aidaCoreGlow 1.8s ease-in-out infinite;
+}
+
+.aida-pin {
+  width: 4px;
+  height: 10px;
+  background: var(--accent-1);
+  border-radius: 10px;
+  position: absolute;
+}
+
+.aida-pin-1 {
+  top: -12px;
+  left: 8px;
+}
+
+.aida-pin-2 {
+  top: -12px;
+  right: 8px;
+}
+
+.aida-pin-3 {
+  bottom: -12px;
+  left: 8px;
+}
+
+.aida-pin-4 {
+  bottom: -12px;
+  right: 8px;
+}
+
+.aida-data-panel {
+  width: 48px;
+  height: 48px;
+  background: var(--panel);
+  border-radius: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 16px;
+  overflow: hidden;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.26);
+  animation: aidaPanelMove 2.6s ease-in-out infinite;
+}
+
+.aida-data-panel::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 13px;
+  background: var(--panel-soft);
+  top: 0;
+  left: 0;
+}
+
+.aida-tag {
+  width: 14px;
+  height: 7px;
+  border-radius: 10px;
+  position: absolute;
+  top: 17px;
+  animation: aidaTagScan 2s ease-in-out infinite;
+}
+
+.aida-tag-1 {
+  background: var(--accent-2);
+  left: 7px;
+}
+
+.aida-tag-2 {
+  background: var(--accent-3);
+  right: 7px;
+  animation-delay: 0.25s;
+}
+
+.aida-line {
+  height: 4px;
+  background: var(--text);
+  border-radius: 10px;
+  position: absolute;
+  left: 8px;
+  animation: aidaDataProcess 2s ease-in-out infinite;
+}
+
+.aida-line-1 {
+  width: 32px;
+  top: 29px;
+}
+
+.aida-line-2 {
+  width: 22px;
+  top: 36px;
+  animation-delay: 0.2s;
+}
+
+.aida-line-3 {
+  width: 28px;
+  top: 43px;
+  animation-delay: 0.4s;
+}
+
+.aida-cursor {
+  width: 13px;
+  height: 13px;
+  border-right: 4px solid var(--accent-3);
+  border-bottom: 4px solid var(--accent-3);
+  position: absolute;
+  left: 32px;
+  bottom: 18px;
+  transform: rotate(45deg);
+  animation: aidaCursorClick 2.2s ease-in-out infinite;
+}
+
+
+
+@keyframes aidaGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+@keyframes aidaChipPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes aidaCoreGlow {
+  0%, 100% {
+    box-shadow: 0 0 6px rgba(34, 211, 238, 0.55);
+    opacity: 0.8;
+  }
+
+  50% {
+    box-shadow: 0 0 16px rgba(244, 114, 182, 0.9);
+    opacity: 1;
+  }
+}
+
+@keyframes aidaPanelMove {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-3px) translateY(-2px);
+  }
+}
+
+@keyframes aidaTagScan {
+  0%, 100% {
+    transform: scaleX(0.75);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: scaleX(1.15);
+    opacity: 1;
+  }
+}
+
+@keyframes aidaDataProcess {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scaleX(0.65);
+    transform-origin: left;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@keyframes aidaCursorClick {
+  0%, 100% {
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(5px, -5px) rotate(45deg);
+    opacity: 0.65;
+  }
+}

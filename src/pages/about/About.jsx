@@ -1,0 +1,104 @@
+import React from "react";
+import "./About.css";
+import ContentPage from "../../components/Content Page/ContentPage";
+import NameCard from "../../components/Name card/NameCard";
+import { GrStatusGoodSmall } from "react-icons/gr";
+import Intro from "../../components/About Section/Intro Section/Intro";
+import Education from "../../components/About Section/Education/Education";
+import EducationCard from "../../components/About Section/EducationCard/EducationCard";
+import Skill from "../../components/About Section/Skill Experience/Skill";
+import SkillCard from "../../components/About Section/SkillCard/SkillCard";
+import Admin from "../../components/Animated Icons/Admin Icon/Admin";
+import FrontEnd from "../../components/Animated Icons/Front end/FrontEnd";
+import DataManagement from "../../components/Animated Icons/Data Management/DataManagement";
+import ReactDev from "../../components/Animated Icons/React Dev/ReactDev";
+import DataAnnotation from "../../components/Animated Icons/Data Annotation/DataAnnotation";
+import Academic from "../../components/Animated Icons/Academic/Academic";
+import Footer from "../../components/Footer/Footer";
+import Certificates from "../../components/About Section/Certificates/Certificates";
+import CertificateCard from "../../components/About Section/CertificateCard/CertificateCard";
+
+const About = () => {
+  return (
+    <ContentPage>
+      <NameCard
+        icon={<GrStatusGoodSmall color="green" size={10} />}
+        name="About"
+        nameCardStyle={{
+          alignSelf: "flex-start",
+          padding: "10px",
+          backgroundColor: "transparent",
+        }}
+        nameStyle={{ marginBottom: "3px", fontWeight: "bold" }}
+      />
+
+      <Intro />
+      <Education>
+        <EducationCard
+          level="College"
+          course="B.S Computer Science"
+          school="AMA Computer College Tarlac"
+          year="2019-2023"
+          image="/school/1ce894ed5770808a2879821c2dda209cbbfc9424.jpg"
+        />
+
+        <EducationCard
+          image="/school/image.png"
+          level="High School - Senior High School"
+          school="Tarlac National High School"
+          course="HUMSS"
+          year="2012-2018"
+        />
+      </Education>
+
+      <Skill>
+        <SkillCard
+          icon={<Admin />}
+          title="Technical & Administrative Support"
+          details="Experience supporting digital workflows, record organization, documentation handling, and system-related operations in structured environments."
+        />
+
+        <SkillCard
+          icon={<FrontEnd />}
+          title="Frontend & Web Development"
+          details="Worked on responsive interfaces, interactive web applications, and frontend systems using modern web technologies and component-based development."
+        />
+
+        <SkillCard
+          icon={<DataManagement />}
+          title="Data Management & Organization"
+          details="Handled data organization, updating, processing, and structured record management using digital tools and database-driven systems."
+        />
+
+        <SkillCard
+          icon={<ReactDev />}
+          title="React & UI Development"
+          details="Built and explored modern React-based interfaces focused on responsiveness, reusability, and interactive user experiences."
+        />
+        <SkillCard
+          icon={<DataAnnotation />}
+          title="AI Data Annotation & Processing"
+          details="Contributed to data annotation, transcription, categorization, and dataset preparation following structured quality guidelines for AI-related workflows."
+        />
+
+        <SkillCard
+          icon={<Academic />}
+          title="Academic & Project-Based Experience"
+          details="Developed technical and analytical skills through hands-on projects involving frontend development, algorithms, databases, and application design."
+        />
+      </Skill>
+        <Certificates>
+
+        <CertificateCard image="/certificates/advprog.png" title="CPP - Advanced Programming in C++" details="Completed advanced C++ programming training through Cisco Networking Academy, covering core programming concepts, object-oriented programming, and problem-solving using C++."/>
+
+        <CertificateCard link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e" image="/certificates/itc.png" title="Introduction to Cybersecurity" details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."/>
+
+
+        </Certificates>
+        
+      <Footer />
+    </ContentPage>
+  );
+};
+
+export default About;

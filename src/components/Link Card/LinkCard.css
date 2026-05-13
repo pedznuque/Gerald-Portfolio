@@ -1,0 +1,23 @@
+.link_card {
+
+
+list-style: none;
+padding: 1px;
+display: flex;
+flex-direction: row;
+gap: 15px;
+border-radius: 5px;
+
+    
+}
+
+.link_card .icon{
+
+padding: 7px;
+border-radius: 50%;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}

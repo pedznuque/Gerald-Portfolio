@@ -1,0 +1,50 @@
+.slider {
+
+}
+
+.slider-window {
+  width: 100%;
+  overflow: hidden;
+
+
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ddd;
+  font-size: 24px;
+  
+}
+
+.dots {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: black;
+  width: 20px;
+  border-radius: 10px;
+}

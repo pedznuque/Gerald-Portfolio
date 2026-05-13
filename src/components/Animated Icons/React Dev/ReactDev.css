@@ -1,0 +1,213 @@
+.rui-logo {
+  --bg-dark: #082f49;
+  --bg-main: #0ea5e9;
+  --react: #67e8f9;
+  --accent: #a78bfa;
+  --panel: #ffffff;
+  --panel-soft: #e0f2fe;
+  --text: #0f172a;
+
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rui-card {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, var(--bg-dark), var(--bg-main));
+  position: relative;
+  overflow: hidden;
+
+  animation: ruiFloat 3s ease-in-out infinite;
+}
+
+.rui-card::before {
+  content: "";
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: rgba(103, 232, 249, 0.22);
+  top: -48px;
+  right: -45px;
+  animation: ruiGlow 4s ease-in-out infinite;
+}
+
+.rui-react {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  animation: ruiReactSpin 7s linear infinite;
+}
+
+.rui-orbit {
+  width: 42px;
+  height: 16px;
+  border: 3px solid var(--react);
+  border-radius: 50%;
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+
+.rui-orbit-1 {
+  transform: rotate(0deg);
+}
+
+.rui-orbit-2 {
+  transform: rotate(60deg);
+}
+
+.rui-orbit-3 {
+  transform: rotate(-60deg);
+}
+
+.rui-core {
+  width: 9px;
+  height: 9px;
+  background: var(--react);
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  box-shadow: 0 0 12px rgba(103, 232, 249, 0.9);
+  animation: ruiCorePulse 1.8s ease-in-out infinite;
+}
+
+.rui-ui-panel {
+  width: 48px;
+  height: 44px;
+  background: var(--panel);
+  border-radius: 9px;
+  position: absolute;
+  right: 11px;
+  bottom: 17px;
+  overflow: hidden;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.25);
+  animation: ruiPanelPop 2.5s ease-in-out infinite;
+}
+
+.rui-ui-header {
+  height: 13px;
+  background: var(--panel-soft);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 7px;
+}
+
+.rui-ui-header span {
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.rui-ui-row {
+  height: 4px;
+  background: var(--text);
+  border-radius: 10px;
+  position: absolute;
+  left: 8px;
+  animation: ruiTyping 2s ease-in-out infinite;
+}
+
+.rui-row-1 {
+  width: 29px;
+  top: 21px;
+}
+
+.rui-row-2 {
+  width: 20px;
+  top: 29px;
+  animation-delay: 0.25s;
+}
+
+.rui-ui-button {
+  width: 18px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 10px;
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  animation: ruiButtonPulse 1.8s ease-in-out infinite;
+}
+
+
+
+@keyframes ruiGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+@keyframes ruiReactSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ruiCorePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: scale(1.35);
+    opacity: 1;
+  }
+}
+
+@keyframes ruiPanelPop {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.04) translateY(-2px);
+  }
+}
+
+@keyframes ruiTyping {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scaleX(0.65);
+    transform-origin: left;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@keyframes ruiButtonPulse {
+  0%, 100% {
+    transform: scaleX(1);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: scaleX(1.2);
+    opacity: 1;
+  }
+}

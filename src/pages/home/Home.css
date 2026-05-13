@@ -1,0 +1,128 @@
+.profile_dashboard {
+
+display: flex;
+flex-direction: row;
+
+padding-bottom: 0px;
+
+    
+}
+
+
+.visual_side, .detail_side {
+
+padding: 10px;
+
+}
+
+.detail_side {
+
+width: 60%;
+display: flex;
+flex-direction: column;
+gap: 5px;
+align-items: start;
+
+}
+
+.visual_side {
+
+
+flex: 1;
+
+}
+
+.button_container {
+
+display: flex;
+flex-direction: row;
+gap: 15px;
+
+margin-top: 40px;
+margin-bottom: 20px;
+
+}
+
+
+.button_container .message_button, .button_container .copy_button {
+
+
+    border: var(--green-border-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--green-font-color);
+}
+.button_container .message_button p, .button_container .copy_button p {
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 3px;
+
+
+}
+
+.button_container .message_button .icon, .button_container .copy_button .icon {
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.button_container .message_button {
+
+background-color: var(--button-color) ;
+color: var(--white-font-color);
+border: black;
+
+}
+
+
+
+.visual_side {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.profile_pic {
+
+background-color: gray;
+width: 180px;
+height: 180px;
+border-radius: 50%;
+margin-top: 20px;
+border: solid;
+border-width:8px;
+border-color: white;
+box-shadow: 0.5px 0.5px 3px rgb(52, 52, 52);
+overflow: hidden;
+
+}
+
+.profile_pic img {
+
+width: 180px;
+height: 180px;
+border-radius: 50%;
+object-fit: cover;
+    
+}
+
+
+
+

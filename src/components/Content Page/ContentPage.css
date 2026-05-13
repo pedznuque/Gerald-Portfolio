@@ -1,0 +1,16 @@
+.content_page {
+
+background-color: var(--layout-color);
+width: 650px;
+border-radius: 10px;
+min-height: 700px;
+padding: 20px;
+padding-block: 10px;
+padding-bottom: 15px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+overflow: hidden;
+border: var(--container-border-color);
+color: var(--font-color);
+}
