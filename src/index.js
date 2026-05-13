@@ -8,7 +8,7 @@ import { BrowserRouter } from "react-router";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="GeraldPortfolio">
+    <BrowserRouter basename="Gerald-Portfolio">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
