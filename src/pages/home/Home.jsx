@@ -13,6 +13,7 @@ import LetsWork from "../../components/Home Sections/Lets Work Section/LetsWork"
 import FollowMe from "../../components/Home Sections/Follow Me/FollowMe";
 import Footer from "../../components/Footer/Footer";
 import EcoSystem from "../../components/Home Sections/Ecosystem/EcoSystem";
+import profileImg from '../../assets/profile/image.png'
 
 const Home = () => {
   return (
@@ -84,7 +85,7 @@ const Home = () => {
 
           <div className="profile_pic">
             <img
-              src="/profile/image.png"
+              src={profileImg}
               alt=""
             />
           </div>
