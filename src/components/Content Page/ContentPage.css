@@ -1,6 +1,6 @@
 .content_page {
 
-background-color: var(--layout-color);
+background-color: var(--content-container-color);
 width: 650px;
 border-radius: 10px;
 min-height: 700px;

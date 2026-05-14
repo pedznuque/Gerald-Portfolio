@@ -13,7 +13,7 @@ z-index: 99999;
 
 .nav_card {
 
-background-color: var(--layout-color);
+background-color: var(--content-container-color);
 width: 650px;
 border-radius: 10px;
 padding: 10px;

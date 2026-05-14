@@ -3,6 +3,7 @@ import "./LetsWork.css";
 import DashboardCard from "../../Dashboard Card/DashboardCard";
 import NameCard from "../../Name card/NameCard";
 import { FaNetworkWired } from "react-icons/fa";
+import { images } from "../../../data/images";
 
 const LetsWork = () => {
   return (
@@ -23,17 +24,17 @@ const LetsWork = () => {
 
       <div className="service_container">
         <div className="service_placeholder">
-          <img src="/service/ux.png" alt="" />
+          <img src={images.service.ux} alt="" />
           <div className="title">UI/UX DESIGN</div>
         </div>
 
         <div className="service_placeholder">
-          <img src="/service/code.png" alt="" />
+          <img src={images.service.code} alt="" />
           <div className="title">WEB DEVELOPMENT</div>
         </div>
 
         <div className="service_placeholder">
-          <img src="/service/stack.png" alt="" />
+          <img src={images.service.stack} alt=""/>
           <div className="title">FULL STACK DEV</div>
         </div>
       </div>
@@ -42,3 +43,4 @@ const LetsWork = () => {
 };
 
 export default LetsWork;
+ 

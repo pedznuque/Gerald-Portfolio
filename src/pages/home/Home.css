@@ -3,7 +3,7 @@
 display: flex;
 flex-direction: row;
 
-padding-bottom: 0px;
+
 
     
 }
@@ -22,6 +22,12 @@ display: flex;
 flex-direction: column;
 gap: 5px;
 align-items: start;
+
+}
+
+.prof_sign_off {
+
+display: none;
 
 }
 
@@ -126,3 +132,94 @@ object-fit: cover;
 
 
 
+@media (max-width: 600px) {
+
+
+.profile_dashboard {
+
+display: flex;
+flex-direction: column;
+
+
+
+    
+}
+
+.profile_dashboard .detail_side {
+
+
+width: 100%;
+order: 2;
+
+}
+
+.prof_sign_off {
+
+display: flex;
+
+}
+
+.prof_sign {
+
+display: none;
+
+}
+
+.available_for_work {
+
+display: none;
+
+}
+
+
+.profile_dashboard .visual_side {
+
+align-items: flex-start;
+
+
+
+
+}
+
+.profile_dashboard .profile_pic {
+
+align-self: center;
+
+}
+
+.detail_side {
+
+width: 60%;
+display: flex;
+flex-direction: column;
+gap: 0px;
+align-items: center;
+
+
+}
+.detail_side .content {
+
+display: flex;
+justify-content: center;
+text-align: center;
+
+}
+.visual_side, .detail_side {
+
+padding: 0px;
+
+}
+
+.button_container {
+
+display: flex;
+flex-direction: row;
+gap: 15px;
+
+margin-top: 30px;
+margin-bottom: 10px;
+
+}
+
+
+}

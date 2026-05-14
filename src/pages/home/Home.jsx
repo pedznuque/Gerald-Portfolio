@@ -13,7 +13,7 @@ import LetsWork from "../../components/Home Sections/Lets Work Section/LetsWork"
 import FollowMe from "../../components/Home Sections/Follow Me/FollowMe";
 import Footer from "../../components/Footer/Footer";
 import EcoSystem from "../../components/Home Sections/Ecosystem/EcoSystem";
-import profileImg from '../../assets/profile/image.png'
+import { images } from "../../data/images";
 
 const Home = () => {
   return (
@@ -34,6 +34,7 @@ const Home = () => {
           <NameCard
             icon={<TbBriefcase2Filled color="green" />}
             name="Web developer"
+            className="prof_sign"
             nameCardStyle={{ backgroundColor: "transparent", padding: "0" }}
             nameStyle={{ marginBottom: "3px", fontWeight: "bold", color: "green" }}
           />
@@ -45,6 +46,7 @@ const Home = () => {
               padding: "0",
               marginTop: "15px",
             }}
+            className="content"
             titleCardStyle={{ fontSize: "28px" }}
           />
 
@@ -64,9 +66,19 @@ const Home = () => {
           </div>
         </div>
         <div className="visual_side">
+
+           <NameCard
+            icon={<TbBriefcase2Filled color="green" />}
+            name="Web developer"
+            className="prof_sign_off"
+            nameCardStyle={{ backgroundColor: "transparent", padding: "0" }}
+            nameStyle={{ marginBottom: "3px", fontWeight: "bold", color: "green" }}
+          />
+
           <NameCard
             icon={<GrStatusGoodSmall color="green" size={10} />}
             name="Available For Work"
+            className="available_for_work"
             nameCardStyle={{
               background: "none",
               border: "var(--green-border-color)",
@@ -85,7 +97,7 @@ const Home = () => {
 
           <div className="profile_pic">
             <img
-              src={profileImg}
+              src={images.profile.main}
               alt=""
             />
           </div>

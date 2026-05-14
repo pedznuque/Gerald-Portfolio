@@ -1,31 +1,39 @@
+import htmlIcon from "../assets/tech stack images/html-5.png";
+import cssIcon from "../assets/tech stack images/css-3.png";
+import jsIcon from "../assets/tech stack images/js.png";
+import mysqlIcon from "../assets/tech stack images/mysql-database.png";
+import nodeIcon from "../assets/tech stack images/node-js.png";
+import reactIcon from "../assets/tech stack images/physics.png";
+import pythonIcon from "../assets/tech stack images/python.png";
+
 const techStack = [
   {
     name: "HTML",
-    image: "/tech stack images/html-5.png",
+    image: htmlIcon,
   },
   {
     name: "CSS",
-    image: "/tech stack images/css-3.png",
+    image: cssIcon,
   },
   {
     name: "JavaScript",
-    image: "/tech stack images/js.png",
+    image: jsIcon,
   },
-   {
-    name: "MySql",
-    image: "/tech stack images/mysql-database.png",
+  {
+    name: "MySQL",
+    image: mysqlIcon,
   },
-   {
+  {
     name: "Node JS",
-    image: "/tech stack images/node-js.png",
+    image: nodeIcon,
   },
   {
     name: "React JSX",
-    image: "/tech stack images/physics.png",
+    image: reactIcon,
   },
-    {
+  {
     name: "Python",
-    image: "/tech stack images/python.png",
+    image: pythonIcon,
   },
 ];
 

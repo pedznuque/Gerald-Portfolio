@@ -18,7 +18,7 @@ margin-bottom: 20px;
 
 
 border: 1px solid rgb(187, 187, 187);
-background-color: rgb(245, 245, 245);
+background-color: var(--placeholder-background-color);
 width: 130px;
 height: 130px;
 border-radius: 5px;

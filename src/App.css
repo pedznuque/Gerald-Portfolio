@@ -13,16 +13,16 @@ margin: 0;
 
 --back-layout-color: rgb(240, 238, 235);
 --layout-color: white;
---container-border-color: 1px solid rgb(204, 204, 204);
---dashboard-color: rgb(231, 255, 231);
+--container-border-color: 1px solid rgba(220, 220, 220, 0.768);
+--dashboard-color: rgb(226, 237, 222);
 
---placeholder-color: white;
+--content-container-color: white;
+
+
+
 
 --placeholder-background-color: white;
---placeholder-border-color: 1px solid rgb(166, 165, 165);
-
-
---toggle-size: 100px;
+--placeholder-border-color: 1px solid rgba(164, 164, 164, 0.768);
 
 --button-color: green;
 
@@ -38,5 +38,4 @@ margin: 0;
 
 
 }
-
 

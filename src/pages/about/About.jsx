@@ -17,6 +17,7 @@ import Academic from "../../components/Animated Icons/Academic/Academic";
 import Footer from "../../components/Footer/Footer";
 import Certificates from "../../components/About Section/Certificates/Certificates";
 import CertificateCard from "../../components/About Section/CertificateCard/CertificateCard";
+import { images } from "../../data/images";
 
 const About = () => {
   return (
@@ -39,11 +40,11 @@ const About = () => {
           course="B.S Computer Science"
           school="AMA Computer College Tarlac"
           year="2019-2023"
-          image="/school/1ce894ed5770808a2879821c2dda209cbbfc9424.jpg"
+          image={images.school.first}
         />
 
         <EducationCard
-          image="/school/image.png"
+          image={images.school.second}
           level="High School - Senior High School"
           school="Tarlac National High School"
           course="HUMSS"
@@ -89,9 +90,9 @@ const About = () => {
       </Skill>
         <Certificates>
 
-        <CertificateCard image="/certificates/advprog.png" title="CPP - Advanced Programming in C++" details="Completed advanced C++ programming training through Cisco Networking Academy, covering core programming concepts, object-oriented programming, and problem-solving using C++."/>
+        <CertificateCard image={images.certificates.adv}  title="CPP - Advanced Programming in C++" details="Completed advanced C++ programming training through Cisco Networking Academy, covering core programming concepts, object-oriented programming, and problem-solving using C++."/>
 
-        <CertificateCard link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e" image="/certificates/itc.png" title="Introduction to Cybersecurity" details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."/>
+        <CertificateCard link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e" image={images.certificates.itc} details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."/>
 
 
         </Certificates>
