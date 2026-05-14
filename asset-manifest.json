@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/Gerald-Portfolio/static/css/main.2f113a24.css",
-    "main.js": "/Gerald-Portfolio/static/js/main.c78c2163.js",
+    "main.css": "/Gerald-Portfolio/static/css/main.5d6044bf.css",
+    "main.js": "/Gerald-Portfolio/static/js/main.e3de2e39.js",
     "static/js/453.fd2f0c4a.chunk.js": "/Gerald-Portfolio/static/js/453.fd2f0c4a.chunk.js",
     "static/media/image.png": "/Gerald-Portfolio/static/media/image.a79ded7d2c2dbaeb3f0e.png",
+    "static/media/advprog.png": "/Gerald-Portfolio/static/media/advprog.d4864494e296cc98a72b.png",
+    "static/media/itc.png": "/Gerald-Portfolio/static/media/itc.5f32f362f99baecd47bd.png",
+    "static/media/bbfc9424.jpg": "/Gerald-Portfolio/static/media/1ce894ed5770808a2879821c2dda209cbbfc9424.56a5f654d58bcac00b44.jpg",
+    "static/media/mysql-database.png": "/Gerald-Portfolio/static/media/mysql-database.9469ffbe31a5ef2970e5.png",
+    "static/media/python.png": "/Gerald-Portfolio/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/physics.png": "/Gerald-Portfolio/static/media/physics.5166d1abeed8a14d220c.png",
+    "static/media/node-js.png": "/Gerald-Portfolio/static/media/node-js.e328955d6bbbf3ebc72b.png",
+    "static/media/code.png": "/Gerald-Portfolio/static/media/code.ea42251e9f3632c3814b.png",
+    "static/media/ux.png": "/Gerald-Portfolio/static/media/ux.ffa3e0dd754dc923e50b.png",
+    "static/media/css-3.png": "/Gerald-Portfolio/static/media/css-3.1b6022810693f66c164a.png",
+    "static/media/stack.png": "/Gerald-Portfolio/static/media/stack.d0ce47c4d810e258be31.png",
+    "static/media/js.png": "/Gerald-Portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/Gerald-Portfolio/index.html",
-    "main.2f113a24.css.map": "/Gerald-Portfolio/static/css/main.2f113a24.css.map",
-    "main.c78c2163.js.map": "/Gerald-Portfolio/static/js/main.c78c2163.js.map",
+    "main.5d6044bf.css.map": "/Gerald-Portfolio/static/css/main.5d6044bf.css.map",
+    "main.e3de2e39.js.map": "/Gerald-Portfolio/static/js/main.e3de2e39.js.map",
     "453.fd2f0c4a.chunk.js.map": "/Gerald-Portfolio/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f113a24.css",
-    "static/js/main.c78c2163.js"
+    "static/css/main.5d6044bf.css",
+    "static/js/main.e3de2e39.js"
   ]
 }
