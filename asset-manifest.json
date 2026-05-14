@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gerald-Portfolio/static/css/main.442f463a.css",
+    "main.css": "/Gerald-Portfolio/static/css/main.4c324054.css",
     "main.js": "/Gerald-Portfolio/static/js/main.8e91c0a8.js",
     "static/js/453.fd2f0c4a.chunk.js": "/Gerald-Portfolio/static/js/453.fd2f0c4a.chunk.js",
     "static/media/image.png": "/Gerald-Portfolio/static/media/image.a79ded7d2c2dbaeb3f0e.png",
@@ -17,12 +17,12 @@
     "static/media/stack.png": "/Gerald-Portfolio/static/media/stack.d0ce47c4d810e258be31.png",
     "static/media/js.png": "/Gerald-Portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/Gerald-Portfolio/index.html",
-    "main.442f463a.css.map": "/Gerald-Portfolio/static/css/main.442f463a.css.map",
+    "main.4c324054.css.map": "/Gerald-Portfolio/static/css/main.4c324054.css.map",
     "main.8e91c0a8.js.map": "/Gerald-Portfolio/static/js/main.8e91c0a8.js.map",
     "453.fd2f0c4a.chunk.js.map": "/Gerald-Portfolio/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.442f463a.css",
+    "static/css/main.4c324054.css",
     "static/js/main.8e91c0a8.js"
   ]
 }
