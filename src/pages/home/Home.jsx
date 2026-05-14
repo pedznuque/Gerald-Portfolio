@@ -21,10 +21,12 @@ const Home = () => {
       <NameCard
         icon={<GrStatusGoodSmall color="green" size={10} />}
         name="Home"
+        className="page_title"
         nameCardStyle={{
           alignSelf: "flex-start",
           padding: "10px",
           backgroundColor: "transparent",
+
         }}
         nameStyle={{ marginBottom: "3px", fontWeight: "bold" }}
       />

@@ -1,11 +1,15 @@
 .page_layout {
-
-background-color: var(--back-layout-color);
-padding: 10px;
-padding-top: 90px;
-display: flex;
-justify-content: center;
-overflow: hidden;
-
+  background-color: var(--back-layout-color);
+  padding: 10px;
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
+@media (max-width: 600px) {
+  .page_layout {
+    padding: 0;
+    
+  }
+}

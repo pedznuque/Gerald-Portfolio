@@ -14,3 +14,14 @@ overflow: hidden;
 border: var(--container-border-color);
 color: var(--font-color);
 }
+
+
+@media (max-width: 600px) {
+
+.content_page {
+
+padding-top: 100px;
+
+}
+
+}

@@ -34,7 +34,7 @@ const NavBar = () => {
 
       <div className="action_container">
 
-          <DarkModeButton size={25} showGlow={false}/>
+          <DarkModeButton size={20} showGlow={false}/>
 
         {/*******************Message me*************************/}
         <NameCard
@@ -45,8 +45,10 @@ const NavBar = () => {
             fontWeight: "bold",
             padding: "10px",
             cursor: "pointer",
-            color: "var(--white-font-color)"
+            color: "var(--white-font-color)",
+            fontSize: "14px"
           }}
+          className="message_me"
           nameStyle={{ marginBottom: "1px" }}
         />
 

@@ -25,6 +25,7 @@ const About = () => {
       <NameCard
         icon={<GrStatusGoodSmall color="green" size={10} />}
         name="About"
+        className="page_title"
         nameCardStyle={{
           alignSelf: "flex-start",
           padding: "10px",
