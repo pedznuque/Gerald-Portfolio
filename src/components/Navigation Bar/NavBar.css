@@ -99,11 +99,20 @@ margin-bottom: 4px;
 
 @media (max-width: 600px) {
 
+
+.nav_card {
+
+background-color: var(--content-container-media-color);
+
+border-width: 2px;
+}
+
 nav .message_me_button {
 
 display: none;
 
 }
+
 
 
 }

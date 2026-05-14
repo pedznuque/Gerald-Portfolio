@@ -64,3 +64,42 @@
    flex-direction: row;
    gap: 5px;
 }
+
+@media (max-width: 600px) {
+
+
+.stat_dashboard {
+
+flex-direction: column;
+
+}
+
+.gear_card,
+.radar_card {
+  flex: 1;
+
+  border-radius: 5px;
+  background-color: var(--placeholder-background-color);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 1px solid rgb(184, 184, 184);
+  gap: 5px;
+}
+
+
+.radar_card .details_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.radar_card .details_container h1 {
+
+margin-left: 20px
+
+}
+
+
+}

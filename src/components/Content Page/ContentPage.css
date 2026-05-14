@@ -21,6 +21,8 @@ color: var(--font-color);
 .content_page {
 
 padding-top: 100px;
+border: none;
+border-radius: 0;
 
 }
 

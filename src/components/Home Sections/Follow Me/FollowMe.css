@@ -32,3 +32,21 @@ justify-content: center;
 color: var(--white-font-color);
 
 }
+
+
+@media (max-width: 600px) {
+
+.follow_me {
+
+flex-direction: column;
+gap: 20px;
+
+}
+
+.soc_med_container {
+
+gap: 30px;
+
+}
+    
+}
