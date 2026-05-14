@@ -32,28 +32,19 @@ const NavBar = () => {
           </NavLink>
         </LinkCard>
 
-      <div className="action_container">
+        <div className="action_container">
+          <DarkModeButton size={20} showGlow={false} />
 
-          <DarkModeButton size={20} showGlow={false}/>
+          {/*******************Message me*************************/}
+        
 
-        {/*******************Message me*************************/}
-        <NameCard
-          icon={<BiMessageSquareDetail size={18} />}
-          name="Message Me"
-          nameCardStyle={{
-            backgroundColor: "var(--button-color)",
-            fontWeight: "bold",
-            padding: "10px",
-            cursor: "pointer",
-            color: "var(--white-font-color)",
-            fontSize: "14px"
-          }}
-          className="message_me"
-          nameStyle={{ marginBottom: "1px" }}
-        />
-
-
-      </div>
+          <div className="message_me_button">
+            <div className="icon">
+              <BiMessageSquareDetail size={18} />
+            </div>
+            <p>Message Me</p>
+          </div>
+        </div>
       </div>
     </nav>
   );

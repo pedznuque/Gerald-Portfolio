@@ -73,7 +73,37 @@ transition: linear 0.6s;
 
 }
 
+nav .message_me_button {
+
+background-color: var(--button-color);
+display: flex;
+flex-direction: row;
+padding: 5px;
+align-items: center;
+gap: 5px;
+border-radius: 5px;
+padding-inline: 10px;
+color: white;
+
+}
+nav .message_me_button p{
+
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 4px;
+
+}
 
 
 
+@media (max-width: 600px) {
 
+nav .message_me_button {
+
+display: none;
+
+}
+
+
+}
