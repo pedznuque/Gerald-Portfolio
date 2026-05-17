@@ -1,3 +1,6 @@
+
+
+
 .profile_dashboard {
 
 display: flex;
@@ -113,9 +116,9 @@ height: 180px;
 border-radius: 50%;
 margin-top: 20px;
 border: solid;
-border-width:8px;
-border-color: white;
-box-shadow: 0.5px 0.5px 3px rgb(52, 52, 52);
+border-width:3px;
+border-color: rgb(255, 255, 255);
+
 overflow: hidden;
 
 }

@@ -18,12 +18,15 @@ import Footer from "../../components/Footer/Footer";
 import Certificates from "../../components/About Section/Certificates/Certificates";
 import CertificateCard from "../../components/About Section/CertificateCard/CertificateCard";
 import { images } from "../../data/images";
+import AnimationWrapper from "../../components/framer/AnimationWrapper";
 
 const About = () => {
   return (
-    <ContentPage>
+  <AnimationWrapper>
+
+      <ContentPage>
       <NameCard
-        icon={<GrStatusGoodSmall color="green" size={10} />}
+        icon={<GrStatusGoodSmall color="green" size={10} color="var(--green-font-color)" />}
         name="About"
         className="page_title"
         nameCardStyle={{
@@ -93,13 +96,16 @@ const About = () => {
 
         <CertificateCard image={images.certificates.adv}  title="CPP - Advanced Programming in C++" details="Completed advanced C++ programming training through Cisco Networking Academy, covering core programming concepts, object-oriented programming, and problem-solving using C++."/>
 
-        <CertificateCard link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e" image={images.certificates.itc} details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."/>
+        <CertificateCard title="Certificate" link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e" image={images.certificates.itc} details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."/>
 
 
         </Certificates>
         
       <Footer />
     </ContentPage>
+
+
+  </AnimationWrapper>
   );
 };
 

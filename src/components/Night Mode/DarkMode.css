@@ -6,11 +6,11 @@
 }
 
 .app.dark {
-  --back-layout-color: rgb(18, 18, 18);
-  --container-border-color: 1px solid rgb(70, 70, 70);
-  --dashboard-color: rgb(30, 45, 30);
+  --back-layout-color: rgb(52, 52, 52);
+  --container-border-color: 1px solid rgb(255, 255, 255);
+  --dashboard-color: rgb(103, 103, 103);
 
-  --content-container-color: grey;
+  --content-container-color: rgb(168, 168, 168);
 
   --placeholder-background-color: rgb(35, 35, 35);
   --placeholder-border-color: 1px solid rgb(90, 90, 90);
@@ -21,4 +21,14 @@
   --white-font-color: white;
   --green-font-color: rgb(80, 255, 130);
   --green-border-color: 2px solid rgb(80, 255, 130);
+}
+
+@media (max-width: 600px) {
+
+:root {
+
+--content-container-media-color: rgb(159, 159, 159);
+
+}
+  
 }

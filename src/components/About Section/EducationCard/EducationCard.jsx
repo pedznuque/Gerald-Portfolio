@@ -16,7 +16,6 @@ const EducationCard = ({ level, course, school, year, image }) => {
       </div>
       <div className="details_container">
         <div className="level">
-          <LiaSchoolSolid />
           {level}
         </div>
         <div className="course">

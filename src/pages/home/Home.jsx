@@ -14,12 +14,16 @@ import FollowMe from "../../components/Home Sections/Follow Me/FollowMe";
 import Footer from "../../components/Footer/Footer";
 import EcoSystem from "../../components/Home Sections/Ecosystem/EcoSystem";
 import { images } from "../../data/images";
+import AnimationWrapper from "../../components/framer/AnimationWrapper";
 
 const Home = () => {
   return (
-    <ContentPage className="home_content">
+
+    <AnimationWrapper>
+
+   <ContentPage className="home_content">
       <NameCard
-        icon={<GrStatusGoodSmall color="green" size={10} />}
+        icon={<GrStatusGoodSmall color="var(--green-font-color)" size={10} />}
         name="Home"
         className="page_title"
         nameCardStyle={{
@@ -34,11 +38,11 @@ const Home = () => {
       <DashboardCard className="profile_dashboard">
         <div className="detail_side">
           <NameCard
-            icon={<TbBriefcase2Filled color="green" />}
+            icon={<TbBriefcase2Filled color="var( --green-font-color)" />}
             name="Web developer"
             className="prof_sign"
             nameCardStyle={{ backgroundColor: "transparent", padding: "0" }}
-            nameStyle={{ marginBottom: "3px", fontWeight: "bold", color: "green" }}
+            nameStyle={{ marginBottom: "3px", fontWeight: "bold", color: "var( --green-font-color)" }}
           />
           <TextCard
             title="Gerald Nuque"
@@ -78,9 +82,10 @@ const Home = () => {
           />
 
           <NameCard
-            icon={<GrStatusGoodSmall color="green" size={10} />}
+            icon={<GrStatusGoodSmall color="var(--green-font-color)" size={10} />}
             name="Available For Work"
             className="available_for_work"
+          
             nameCardStyle={{
               background: "none",
               border: "var(--green-border-color)",
@@ -111,6 +116,9 @@ const Home = () => {
       <FollowMe />
       <Footer />
     </ContentPage>
+
+    </AnimationWrapper>
+ 
   );
 };
 

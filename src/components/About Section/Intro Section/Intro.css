@@ -80,4 +80,35 @@ gap: 10px;
 
 }
 
+.profile_intro .intro_text {
+
+
+width: 100%;
+
+
+}
+
+
+.profile_intro .image_holder {
+
+width: 100%;
+
+background-color: rgb(164, 164, 164);
+
+}
+
+
+.profile_intro .image_holder img{
+
+object-fit: contain;
+}
+.profile_intro .profile {
+
+
+width: 100%;
+
+}
+
+
+
 }

@@ -35,7 +35,7 @@ const CertificateCard = ({
         <div className="details_container">
           {title && (
             <div className="title">
-              <FaCertificate />
+              
               {title}
             </div>
           )}

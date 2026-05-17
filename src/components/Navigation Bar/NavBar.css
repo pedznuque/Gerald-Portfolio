@@ -1,6 +1,5 @@
 nav {
 
-
 width: 100%;
 position: fixed;
 display: flex;
@@ -52,8 +51,8 @@ align-items: center;
 }
 
 .nav_link_card a{
-color: black;
 
+color: var(--font-color);
 }
 
 
@@ -67,7 +66,7 @@ transition: linear 0.2s;
 
 .nav_link_card a.active {
 
-background-color: green;
+background-color: var(--button-color);
 color: var(--white-font-color);
 transition: linear 0.6s;
 
