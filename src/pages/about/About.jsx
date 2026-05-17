@@ -22,11 +22,15 @@ import AnimationWrapper from "../../components/framer/AnimationWrapper";
 
 const About = () => {
   return (
-  <AnimationWrapper>
-
-      <ContentPage>
+    <ContentPage>
       <NameCard
-        icon={<GrStatusGoodSmall color="green" size={10} color="var(--green-font-color)" />}
+        icon={
+          <GrStatusGoodSmall
+            color="green"
+            size={10}
+            color="var(--green-font-color)"
+          />
+        }
         name="About"
         className="page_title"
         nameCardStyle={{
@@ -36,76 +40,85 @@ const About = () => {
         }}
         nameStyle={{ marginBottom: "3px", fontWeight: "bold" }}
       />
+      <AnimationWrapper>
+        <Intro />
+      </AnimationWrapper>
 
-      <Intro />
-      <Education>
-        <EducationCard
-          level="College"
-          course="B.S Computer Science"
-          school="AMA Computer College Tarlac"
-          year="2019-2023"
-          image={images.school.first}
+      <AnimationWrapper>
+        <Education>
+          <EducationCard
+            level="College"
+            course="B.S Computer Science"
+            school="AMA Computer College Tarlac"
+            year="2019-2023"
+            image={images.school.first}
+          />
+
+          <EducationCard
+            image={images.school.second}
+            level="High School - Senior High School"
+            school="Tarlac National High School"
+            course="HUMSS"
+            year="2012-2018"
+          />
+        </Education>
+      </AnimationWrapper>
+
+      <AnimationWrapper>
+        <Skill>
+          <SkillCard
+            icon={<Admin />}
+            title="Technical & Administrative Support"
+            details="Experience supporting digital workflows, record organization, documentation handling, and system-related operations in structured environments."
+          />
+
+          <SkillCard
+            icon={<FrontEnd />}
+            title="Frontend & Web Development"
+            details="Worked on responsive interfaces, interactive web applications, and frontend systems using modern web technologies and component-based development."
+          />
+
+          <SkillCard
+            icon={<DataManagement />}
+            title="Data Management & Organization"
+            details="Handled data organization, updating, processing, and structured record management using digital tools and database-driven systems."
+          />
+
+          <SkillCard
+            icon={<ReactDev />}
+            title="React & UI Development"
+            details="Built and explored modern React-based interfaces focused on responsiveness, reusability, and interactive user experiences."
+          />
+          <SkillCard
+            icon={<DataAnnotation />}
+            title="AI Data Annotation & Processing"
+            details="Contributed to data annotation, transcription, categorization, and dataset preparation following structured quality guidelines for AI-related workflows."
+          />
+
+          <SkillCard
+            icon={<Academic />}
+            title="Academic & Project-Based Experience"
+            details="Developed technical and analytical skills through hands-on projects involving frontend development, algorithms, databases, and application design."
+          />
+        </Skill>
+      </AnimationWrapper>
+      <Certificates>
+        <CertificateCard
+          image={images.certificates.adv}
+          title="CPP - Advanced Programming in C++"
+          details="Completed advanced C++ programming training through Cisco Networking Academy, covering core programming concepts, object-oriented programming, and problem-solving using C++."
         />
 
-        <EducationCard
-          image={images.school.second}
-          level="High School - Senior High School"
-          school="Tarlac National High School"
-          course="HUMSS"
-          year="2012-2018"
+        <CertificateCard
+          title="Certificate"
+          link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e"
+          image={images.certificates.itc}
+          details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."
         />
-      </Education>
+      </Certificates>
 
-      <Skill>
-        <SkillCard
-          icon={<Admin />}
-          title="Technical & Administrative Support"
-          details="Experience supporting digital workflows, record organization, documentation handling, and system-related operations in structured environments."
-        />
-
-        <SkillCard
-          icon={<FrontEnd />}
-          title="Frontend & Web Development"
-          details="Worked on responsive interfaces, interactive web applications, and frontend systems using modern web technologies and component-based development."
-        />
-
-        <SkillCard
-          icon={<DataManagement />}
-          title="Data Management & Organization"
-          details="Handled data organization, updating, processing, and structured record management using digital tools and database-driven systems."
-        />
-
-        <SkillCard
-          icon={<ReactDev />}
-          title="React & UI Development"
-          details="Built and explored modern React-based interfaces focused on responsiveness, reusability, and interactive user experiences."
-        />
-        <SkillCard
-          icon={<DataAnnotation />}
-          title="AI Data Annotation & Processing"
-          details="Contributed to data annotation, transcription, categorization, and dataset preparation following structured quality guidelines for AI-related workflows."
-        />
-
-        <SkillCard
-          icon={<Academic />}
-          title="Academic & Project-Based Experience"
-          details="Developed technical and analytical skills through hands-on projects involving frontend development, algorithms, databases, and application design."
-        />
-      </Skill>
-        <Certificates>
-
-        <CertificateCard image={images.certificates.adv}  title="CPP - Advanced Programming in C++" details="Completed advanced C++ programming training through Cisco Networking Academy, covering core programming concepts, object-oriented programming, and problem-solving using C++."/>
-
-        <CertificateCard title="Certificate" link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e" image={images.certificates.itc} details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."/>
-
-
-        </Certificates>
-        
       <Footer />
     </ContentPage>
-
-
-  </AnimationWrapper>
   );
 };
 
