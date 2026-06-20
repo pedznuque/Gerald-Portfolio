@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
-
+import resumePdf from "../../assets/resume/Gerald-Nuque-Resume.pdf";
 import ContentPage from "../../components/Content Page/ContentPage";
 import DashboardCard from "../../components/Dashboard Card/DashboardCard";
 import NameCard from "../../components/Name card/NameCard";
@@ -96,7 +96,7 @@ const Home = () => {
             <div className="button_container">
               <a
                 className="message_button"
-                href="/resume/Gerald-Nuque-Resume.pdf"
+                href={resumePdf}
                 download="Gerald-Nuque-Resume.pdf"
               >
                 <div className="icon">
