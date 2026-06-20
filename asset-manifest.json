@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gerald-Portfolio/static/css/main.529b577e.css",
-    "main.js": "/Gerald-Portfolio/static/js/main.a44fbe17.js",
+    "main.js": "/Gerald-Portfolio/static/js/main.4dc5bdc5.js",
     "static/js/453.fd2f0c4a.chunk.js": "/Gerald-Portfolio/static/js/453.fd2f0c4a.chunk.js",
     "static/media/image.png": "/Gerald-Portfolio/static/media/image.a79ded7d2c2dbaeb3f0e.png",
     "static/media/dark.png": "/Gerald-Portfolio/static/media/dark.eef123d7f7a889178898.png",
@@ -11,6 +11,7 @@
     "static/media/ccna.png": "/Gerald-Portfolio/static/media/ccna.7aaa9869302f2e2ff085.png",
     "static/media/cpa.png": "/Gerald-Portfolio/static/media/cpa.34990b34c76e7fa3602c.png",
     "static/media/packetTracer.png": "/Gerald-Portfolio/static/media/packetTracer.57096e249feff0e95876.png",
+    "static/media/Gerald-Nuque-Resume.pdf": "/Gerald-Portfolio/static/media/Gerald-Nuque-Resume.8ca4a0a2d8a8bf8c1e11.pdf",
     "static/media/mysql-database.png": "/Gerald-Portfolio/static/media/mysql-database.9469ffbe31a5ef2970e5.png",
     "static/media/python.png": "/Gerald-Portfolio/static/media/python.6a5cbc319ab3ddf8ef92.png",
     "static/media/physics.png": "/Gerald-Portfolio/static/media/physics.5166d1abeed8a14d220c.png",
@@ -22,11 +23,11 @@
     "static/media/js.png": "/Gerald-Portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/Gerald-Portfolio/index.html",
     "main.529b577e.css.map": "/Gerald-Portfolio/static/css/main.529b577e.css.map",
-    "main.a44fbe17.js.map": "/Gerald-Portfolio/static/js/main.a44fbe17.js.map",
+    "main.4dc5bdc5.js.map": "/Gerald-Portfolio/static/js/main.4dc5bdc5.js.map",
     "453.fd2f0c4a.chunk.js.map": "/Gerald-Portfolio/static/js/453.fd2f0c4a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.529b577e.css",
-    "static/js/main.a44fbe17.js"
+    "static/js/main.4dc5bdc5.js"
   ]
 }
