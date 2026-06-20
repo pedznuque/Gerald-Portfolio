@@ -15,7 +15,10 @@ import nodeIcon from "../assets/tech stack images/node-js.png";
 import physicsIcon from "../assets/tech stack images/physics.png";
 import pythonIcon from "../assets/tech stack images/python.png";
 import advProg from "../assets/certificates/advprog.png"
-import itc from "../assets/certificates/itc.png"
+import itc from "../assets/certificates/itc.png";
+import cpa from "../assets/certificates/cpa.png";
+import ccna from "../assets/certificates/ccna.png";
+import packetTracer from "../assets/certificates/packetTracer.png"
 
 export const images = {
   profile: {
@@ -46,7 +49,10 @@ export const images = {
   certificates: {
 
     adv: advProg,
-    itc: itc
+    itc: itc,
+    cpa: cpa,
+    ccna: ccna,
+    packetTracer: packetTracer
 
 
   }

@@ -52,6 +52,11 @@ margin-bottom: 20px;
 
 }
 
+.button_container .message_button, .button_container button.copy_button {
+
+ background-color: rgba(0, 255, 255, 0);
+
+}
 
 .button_container .message_button, .button_container .copy_button {
 
@@ -68,6 +73,9 @@ margin-bottom: 20px;
     font-weight: bold;
     font-size: 12px;
     color: var(--green-font-color);
+    text-decoration: none;
+   
+    
 }
 .button_container .message_button p, .button_container .copy_button p {
 
@@ -223,6 +231,8 @@ margin-top: 30px;
 margin-bottom: 10px;
 
 }
+
+
 .page_title {
 
 display: none;

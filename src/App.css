@@ -1,6 +1,6 @@
 html {
 
- scroll-behavior: smooth;
+    
 
 }
 
@@ -42,8 +42,6 @@ margin: 0;
 --green-font-color: green;
 --green-border-color: 2px solid green;
 
-
-
-
+--dashboard-background-image: url("./components/Dashboard\ Card/image.png");
 }
 

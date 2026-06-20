@@ -21,6 +21,7 @@
   --white-font-color: white;
   --green-font-color: rgb(80, 255, 130);
   --green-border-color: 2px solid rgb(80, 255, 130);
+  --dashboard-background-image: url("../Dashboard\ Card/dark.png");
 }
 
 @media (max-width: 600px) {

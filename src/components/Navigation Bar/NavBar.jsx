@@ -38,12 +38,7 @@ const NavBar = () => {
           {/*******************Message me*************************/}
         
 
-          <div className="message_me_button">
-            <div className="icon">
-              <BiMessageSquareDetail size={18} />
-            </div>
-            <p>Message Me</p>
-          </div>
+     
         </div>
       </div>
     </nav>

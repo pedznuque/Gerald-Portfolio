@@ -102,20 +102,38 @@ const About = () => {
           />
         </Skill>
       </AnimationWrapper>
-      <Certificates>
-        <CertificateCard
-          image={images.certificates.adv}
-          title="CPP - Advanced Programming in C++"
-          details="Completed advanced C++ programming training through Cisco Networking Academy, covering core programming concepts, object-oriented programming, and problem-solving using C++."
-        />
+     <Certificates>
+  <CertificateCard
+    image={images.certificates.adv}
+    title="CPP - Advanced Programming in C++"
+    details="Completed advanced C++ programming training through Cisco Networking Academy, covering object-oriented programming, problem-solving, and software development fundamentals."
+  />
 
-        <CertificateCard
-          title="Certificate"
-          link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e"
-          image={images.certificates.itc}
-          details="Completed Cisco Networking Academy's Introduction to Cybersecurity course, gaining foundational knowledge of cybersecurity principles, online threats, data protection, and safe digital practices."
-        />
-      </Certificates>
+  <CertificateCard
+    image={images.certificates.cpa}
+    title="CPA - Programming Essentials in C++"
+    details="Completed foundational C++ programming coursework, focusing on programming logic, data structures, algorithms, and software development principles."
+  />
+
+  <CertificateCard
+    image={images.certificates.itc}
+    title="Introduction to Cybersecurity"
+    link="https://www.credly.com/badges/21fb3dde-78c7-4ce6-9163-7bc48e50930e"
+    details="Gained foundational knowledge of cybersecurity concepts, online threats, data protection, risk management, and safe digital practices."
+  />
+
+  <CertificateCard
+    image={images.certificates.ccna}
+    title="CCNA: Switching, Routing, and Wireless Essentials"
+    details="Learned networking fundamentals including routing, switching, wireless networking, IP addressing, network security, and infrastructure management."
+  />
+
+  <CertificateCard
+    image={images.certificates.packetTracer}
+    title="Introduction to Packet Tracer"
+    details="Completed hands-on networking simulations using Cisco Packet Tracer to design, configure, troubleshoot, and visualize network environments."
+  />
+</Certificates>
 
       <Footer />
     </ContentPage>

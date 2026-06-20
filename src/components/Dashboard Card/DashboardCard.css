@@ -4,7 +4,11 @@ min-height: 100px;
 border-radius: 5px;
 padding: var(--dashboard-padding);
 
-background-color: var(--dashboard-color);
+
 border: var(--container-border-color);
+background-image: var(--dashboard-background-image);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 
 }

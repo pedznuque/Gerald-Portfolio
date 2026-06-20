@@ -1,0 +1,24 @@
+.proj_placeholder {
+background-color: var(--placeholder-background-color);
+width: 100%;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+gap: 10px;
+border-radius: 5px;
+}
+
+.proj_placeholder .description p {
+
+max-width: 400px;
+
+}
+
+
+.proj_placeholder .status p {
+
+color: orangered;
+max-width: 400px;
+
+}
